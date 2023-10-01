@@ -19,7 +19,7 @@ export default function Navbar() {
               </div>
               <div className="text-3xl font-bold">OSM Kerala</div>
             </div>
-            <div className="hidden text-[#656d78] font-semibold md:flex space-x-4">
+            <div className="hidden text-[#2b2b2b] font-semibold md:flex space-x-4">
               {/* Add your navigation links here */}
               <a>HOME</a>
               <a>ABOUT US</a>
@@ -68,7 +68,7 @@ export default function Navbar() {
           </div>
         </div>
         {isOpen && (
-          <div className="text-[#656d78]">
+          <div className="text-[#2b2b2b]">
             {/* Add your mobile navigation links here */} <a>HOME</a>
             <a>ABOUT US</a>
             <a>COMMUNITY</a>
