@@ -69,7 +69,8 @@ export default function Navbar() {
         </div>
         {isOpen && (
           <div className="text-[#2b2b2b]">
-            {/* Add your mobile navigation links here */} <a>HOME</a>
+            {/* Add your mobile navigation links here */}
+            <a>HOME</a>
             <a>ABOUT US</a>
             <a>COMMUNITY</a>
             <a>SUBSCRIBE</a>
