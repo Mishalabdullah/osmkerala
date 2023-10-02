@@ -1,6 +1,5 @@
 import { useState } from "react";
-// import { motion } from "framer-motion";
-
+import NavbarButton from "./NavbarButton";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -21,21 +20,11 @@ export default function Navbar() {
             </div>
             <div className="hidden text-[#2b2b2b] font-semibold md:flex space-x-4">
               {/* Add your navigation links here */}
-              <a className=" hover:bg-[#1a1d20] rounded-lg hover:text-white  active:bg-gray-600 focus:outline-none focus:ring focus:ring-gray-300 p-2">
-                HOME
-              </a>
-              <a className=" hover:bg-[#1a1d20] rounded-lg hover:text-white  active:bg-gray-600 focus:outline-none focus:ring focus:ring-gray-300 p-2">
-                ABOUT US
-              </a>
-              <a className=" hover:bg-[#1a1d20] rounded-lg hover:text-white  active:bg-gray-600 focus:outline-none focus:ring focus:ring-gray-300 p-2">
-                COMMUNITY
-              </a>
-              <a className=" hover:bg-[#1a1d20] rounded-lg hover:text-white  active:bg-gray-600 focus:outline-none focus:ring focus:ring-gray-300 p-2">
-                SUBSCRIBE
-              </a>
-              <a className=" hover:bg-[#1a1d20] rounded-lg hover:text-white  active:bg-gray-600 focus:outline-none focus:ring focus:ring-gray-300 p-2">
-                MAINTAINERS
-              </a>
+              <NavbarButton isMobile={false} link="" text="HOME" />
+              <NavbarButton isMobile={false} link="" text="ABOUT US" />
+              <NavbarButton isMobile={false} link="" text="COMMUNITY" />
+              <NavbarButton isMobile={false} link="" text="SUBSCRIBE" />
+              <NavbarButton isMobile={false} link="" text="MAINTAINERS" />
             </div>
             <div className="md:hidden">
               <button
@@ -81,29 +70,19 @@ export default function Navbar() {
           <div className="absolute top-13 right-5  text-semiblod flex-col text-right w-fit justify-self-end rounded-lg bg-[#1a1d20] text-[#ffffff]">
             {/* Add your mobile navigation links here */}
             <div className="m-2 p-2 mr-8">
-              <a className="bg-[#1a1d20] hover:bg-white rounded-lg hover:text-[#1a1d20]  active:bg-gray-600 focus:outline-none focus:ring focus:ring-gray-300 p-2">
-                HOME
-              </a>
+              <NavbarButton isMobile={true} link="" text="HOME" />
             </div>
             <div className="m-2 p-2 mr-8">
-              <a className="bg-[#1a1d20] hover:bg-white rounded-lg hover:text-[#1a1d20]  active:bg-gray-600 focus:outline-none focus:ring focus:ring-gray-300 p-2">
-                ABOUT US
-              </a>
+              <NavbarButton isMobile={true} link="" text="ABOUT US" />
             </div>
             <div className="m-2 p-2 mr-8">
-              <a className="bg-[#1a1d20] hover:bg-white rounded-lg hover:text-[#1a1d20]  active:bg-gray-600 focus:outline-none focus:ring focus:ring-gray-300 p-2">
-                SUBSCRIBE
-              </a>
+              <NavbarButton isMobile={true} link="" text="SUBSCRIBE" />
             </div>
             <div className="m-2 p-2 mr-8">
-              <a className="bg-[#1a1d20] hover:bg-white rounded-lg hover:text-[#1a1d20]  active:bg-gray-600 focus:outline-none focus:ring focus:ring-gray-300 p-2">
-                COMMUNITY
-              </a>
+              <NavbarButton isMobile={true} link="" text="COMMUNITY" />
             </div>
             <div className="m-2 p-2 mr-8">
-              <a className="bg-[#1a1d20] hover:bg-white rounded-lg hover:text-[#1a1d20]  active:bg-gray-600 focus:outline-none focus:ring focus:ring-gray-300 p-2">
-                MAINTAINERS
-              </a>
+              <NavbarButton isMobile={true} link="" text="MAINTAINERS" />
             </div>
           </div>
         )}
