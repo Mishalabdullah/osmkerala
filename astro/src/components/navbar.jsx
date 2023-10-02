@@ -10,7 +10,7 @@ export default function Navbar() {
 
   return (
     <nav>
-      <div>
+      <div className="border-2  border-[#E6E9ED];">
         <div className="m-2 p-2 container mx-auto">
           <div className="flex justify-between items-center">
             <div className="flex items-center">
@@ -21,16 +21,26 @@ export default function Navbar() {
             </div>
             <div className="hidden text-[#2b2b2b] font-semibold md:flex space-x-4">
               {/* Add your navigation links here */}
-              <a>HOME</a>
-              <a>ABOUT US</a>
-              <a>COMMUNITY</a>
-              <a>SUBSCRIBE</a>
-              <a>MAINTAINERS</a>
+              <a className=" hover:bg-[#1a1d20] rounded-lg hover:text-white  active:bg-gray-600 focus:outline-none focus:ring focus:ring-gray-300 p-2">
+                HOME
+              </a>
+              <a className=" hover:bg-[#1a1d20] rounded-lg hover:text-white  active:bg-gray-600 focus:outline-none focus:ring focus:ring-gray-300 p-2">
+                ABOUT US
+              </a>
+              <a className=" hover:bg-[#1a1d20] rounded-lg hover:text-white  active:bg-gray-600 focus:outline-none focus:ring focus:ring-gray-300 p-2">
+                COMMUNITY
+              </a>
+              <a className=" hover:bg-[#1a1d20] rounded-lg hover:text-white  active:bg-gray-600 focus:outline-none focus:ring focus:ring-gray-300 p-2">
+                SUBSCRIBE
+              </a>
+              <a className=" hover:bg-[#1a1d20] rounded-lg hover:text-white  active:bg-gray-600 focus:outline-none focus:ring focus:ring-gray-300 p-2">
+                MAINTAINERS
+              </a>
             </div>
             <div className="md:hidden">
               <button
                 onClick={toggleNavbar}
-                className="text-[#2C3136] hover:text-gray-300"
+                className="text-[#2C3136] p-2 m-2 hover:text-gray-300"
               >
                 {isOpen ? (
                   <svg
@@ -50,7 +60,7 @@ export default function Navbar() {
                 ) : (
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-6 w-6 text-black"
+                    className="h-6 w-6 text-black "
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -68,13 +78,33 @@ export default function Navbar() {
           </div>
         </div>
         {isOpen && (
-          <div className="text-[#2b2b2b]">
+          <div className="absolute top-13 right-5  text-semiblod flex-col text-right w-fit justify-self-end rounded-lg bg-[#1a1d20] text-[#ffffff]">
             {/* Add your mobile navigation links here */}
-            <a>HOME</a>
-            <a>ABOUT US</a>
-            <a>COMMUNITY</a>
-            <a>SUBSCRIBE</a>
-            <a>MAINTAINERS</a>
+            <div className="m-2 p-2 mr-8">
+              <a className="bg-[#1a1d20] hover:bg-white rounded-lg hover:text-[#1a1d20]  active:bg-gray-600 focus:outline-none focus:ring focus:ring-gray-300 p-2">
+                HOME
+              </a>
+            </div>
+            <div className="m-2 p-2 mr-8">
+              <a className="bg-[#1a1d20] hover:bg-white rounded-lg hover:text-[#1a1d20]  active:bg-gray-600 focus:outline-none focus:ring focus:ring-gray-300 p-2">
+                ABOUT US
+              </a>
+            </div>
+            <div className="m-2 p-2 mr-8">
+              <a className="bg-[#1a1d20] hover:bg-white rounded-lg hover:text-[#1a1d20]  active:bg-gray-600 focus:outline-none focus:ring focus:ring-gray-300 p-2">
+                SUBSCRIBE
+              </a>
+            </div>
+            <div className="m-2 p-2 mr-8">
+              <a className="bg-[#1a1d20] hover:bg-white rounded-lg hover:text-[#1a1d20]  active:bg-gray-600 focus:outline-none focus:ring focus:ring-gray-300 p-2">
+                COMMUNITY
+              </a>
+            </div>
+            <div className="m-2 p-2 mr-8">
+              <a className="bg-[#1a1d20] hover:bg-white rounded-lg hover:text-[#1a1d20]  active:bg-gray-600 focus:outline-none focus:ring focus:ring-gray-300 p-2">
+                MAINTAINERS
+              </a>
+            </div>
           </div>
         )}
       </div>
