@@ -1,0 +1,72 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/navbar.jsx';
+---
+
+<Layout title="Welcome to OSM Kerala.">
+	<main>
+		<div>
+			<Navbar client:load />			
+		</div>
+        <div class="flex-col  items-center m-2 p-2   justify-center">
+            <div>
+                <div class="text-2xl font-bold">About Us</div>
+                <div>
+                    <img src="/osmcommunity.jpg" width={300} alt ="hero image" />
+                </div>
+                <p>we are a group of people who love maps and want to keep that data open. Openstreetmap activities in India started active from 2007. OSM Kerala Community has been very active over the past 13 years.
+
+                    Community has been mapping various features over the years. During the 2018 floods, Openstreetmaps was widely used. Community has been actively enaging with various partners.
+                    Boundaries
+                    Administrative
+                    
+                        State Boundaries
+                        District Boundaries
+                        Taluk Boundaries
+                    
+                    Political
+                    
+                        Lok Sabha Constituencies
+                        Assembly Constituencies
+                    
+                    Local Govt Bodies
+                    
+                        Local Bodies in KeralaYes check.svg
+                        Local Bodies Wards in Kerala
+                    
+                    Environment
+                    
+                        Rivers
+                        Lakes
+                        Reservoirs
+                        Lagoons and Estuaries
+                        Water Streams
+                        Ponds
+                        Forests
+                    
+                    Roads
+                    
+                        National Highway
+                        State Highway
+                        Major District road
+                    
+                    Railways
+                    
+                        Railways Stations
+                        Kochi Metro
+                        Proposed Silverline (K-rail)
+                    
+                    Amenity
+                    
+                        Police station
+                        Fire and Rescue station
+                        Health Facilities in Kerala
+                    
+                    Activies
+                    
+                        Mapathons
+                        Webinars</p>
+            </div>
+        </div>
+	</main>
+</Layout>
