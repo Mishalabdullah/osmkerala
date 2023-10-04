@@ -15,7 +15,9 @@ export default function Navbar() {
             <div className="flex justify-between items-center">
               <div className="flex items-center">
                 <div>
-                  <img src="/osmkerala.png" alt="logo" width={100} />
+                  <a href="/">
+                    <img src="/osmkerala.png" alt="logo" width={100} />
+                  </a>
                 </div>
                 <div className="text-3xl font-bold">OSM Kerala</div>
               </div>
