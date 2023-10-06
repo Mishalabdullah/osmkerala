@@ -2,7 +2,6 @@ import { useState } from "react";
 import NavbarButton from "./NavbarButton";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-
   const toggleNavbar = () => {
     setIsOpen(!isOpen);
   };
