@@ -1,13 +1,14 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Navbar from '../components/navbar.jsx';
+import HeadingComponent from '../components/elements/heading';
 ---
 
 <Layout title="Welcome to OSM Kerala.">
 	<main>
 		<div>
 			<Navbar client:load />	
-            <div class="text-2xl font-bold m-2 p-2 ">Maintainers</div>		
+			<HeadingComponent heading="Maintainers" />
 		</div>
 	</main>
 </Layout>

@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Navbar from '../components/navbar.jsx';
+import HeadingComponent from '../components/elements/heading';
 ---
 
 <Layout title="Welcome to OSM Kerala.">
@@ -10,7 +11,7 @@ import Navbar from '../components/navbar.jsx';
 		</div>
         <div class="flex-col  items-center m-2 p-2   justify-center">
             <div>
-                <div class="text-2xl font-bold m-2 p-2 ">About Us</div>
+                <HeadingComponent heading="About Us" />
                 <div>
                     <img src="/osmcommunity.jpg" width={300} alt ="hero image" />
                 </div>
