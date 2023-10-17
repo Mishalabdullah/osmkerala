@@ -24,8 +24,16 @@ export default function Navbar() {
                 {/* Add your navigation links here */}
                 <NavbarButton isMobile={false} link="/" text="HOME" />
                 <NavbarButton isMobile={false} link="/about" text="ABOUT US" />
-                <NavbarButton isMobile={false} link="" text="COMMUNITY" />
-                <NavbarButton isMobile={false} link="" text="SUBSCRIBE" />
+                <NavbarButton
+                  isMobile={false}
+                  link="/community"
+                  text="COMMUNITY"
+                />
+                <NavbarButton
+                  isMobile={false}
+                  link="/statement"
+                  text="SATEMENT"
+                />
                 <NavbarButton
                   isMobile={false}
                   link="/maintainers"
@@ -82,7 +90,7 @@ export default function Navbar() {
                 <NavbarButton isMobile={true} link="/about" text="ABOUT US" />
               </div>
               <div className="m-2 p-2 mr-8">
-                <NavbarButton isMobile={true} link="" text="SUBSCRIBE" />
+                <NavbarButton isMobile={true} link="" text="SATEMENT" />
               </div>
               <div className="m-2 p-2 mr-8">
                 <NavbarButton isMobile={true} link="" text="COMMUNITY" />
