@@ -92,10 +92,18 @@ export default function Navbar() {
                 <NavbarButton isMobile={true} link="/about" text="ABOUT US" />
               </div>
               <div className="m-2 p-2 mr-8">
-                <NavbarButton isMobile={true} link="" text="SATEMENT" />
+                <NavbarButton
+                  isMobile={true}
+                  link="/statement"
+                  text="SATEMENT"
+                />
               </div>
               <div className="m-2 p-2 mr-8">
-                <NavbarButton isMobile={true} link="" text="COMMUNITY" />
+                <NavbarButton
+                  isMobile={true}
+                  link="/community"
+                  text="COMMUNITY"
+                />
               </div>
               <div className="m-2 p-2 mr-8">
                 <NavbarButton
