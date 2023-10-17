@@ -18,7 +18,9 @@ export default function Navbar() {
                     <img src="/osmkerala.png" alt="logo" width={100} />
                   </a>
                 </div>
-                <div className="text-3xl font-bold">OSM Kerala</div>
+                <a href="/">
+                  <div className="text-3xl font-bold">OSM Kerala</div>
+                </a>
               </div>
               <div className="hidden text-[#2b2b2b] font-semibold md:flex space-x-4">
                 {/* Add your navigation links here */}
